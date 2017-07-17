@@ -29,3 +29,22 @@ my $hashRef = \%atomicWeights;
 print $atomicWeights{"Helium"}; # direct hash access
 print ${ $hashRef }{"Helium"};  # use a reference to get to the hash
 print $hashRef->{"Helium"};     # exactly the same thing - this is very common
+
+
+# $blubb = {} denote an anonymous hash, $blubb = [] anonymous array
+
+my %account = (
+    "number" => "31415926",
+    "opened" => "3000-01-01",
+    # owners is a reference to an anonymous hash
+    "owners" => [
+        {
+            "name" => "Philip Fry",
+            "DOB"  => "1974-08-06",
+        },
+        {
+            "name" => "Hubert Farnsworth",
+            "DOB"  => "2841-04-09",
+        },
+    ],
+);
