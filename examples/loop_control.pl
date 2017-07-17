@@ -22,6 +22,7 @@ for my $number (2 .. 100) {
     }
 }
 
+
 # label any loop with ALLCAPITALS, next and last target the label
 CANDIDATE: for my $candidate ( 2 .. 100 ) {
     for my $divisor ( 2 .. sqrt $candidate ) {
@@ -29,3 +30,4 @@ CANDIDATE: for my $candidate ( 2 .. 100 ) {
     }
     print $candidate." is prime\n";
 }
+
