@@ -28,4 +28,5 @@ print @array_stack;
 print "\n";
 
 # unshift inserts new elements at the beginning
-unshift @
+unshift @array_stack, "was";
+print @array_stack;
